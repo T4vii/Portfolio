@@ -846,11 +846,40 @@ span {
   .projects .prj-details {
     font-size: 50%;
   }
+
+  .prj-details p {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    font-size: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider img {
+    width: 180px;
+    height: 220px;
+  }
+  .prj-imagefirst {
+    margin-left: 140px;
+    margin-top: 20px;
+  }
+  .prj-imagesecond {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 765px) {
   html {
     font-size: 50%;
+  }
+
+  .home {
+    background: none;
   }
 
   .home-content h1 {
@@ -869,11 +898,6 @@ span {
 
   .slider p {
     padding: 0 20px;
-  }
-
-  .projects .prj-imagesecond .prj-imagefirst {
-    width: 70px;
-    height: 20px;
   }
 
   .projects .prj-details {

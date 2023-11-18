@@ -353,7 +353,7 @@ span {
 
 .skills {
   background-color: var(--second-bg-color);
-  min-height: 70vh;
+  min-height: 60vh;
   padding-top: 80px;
 }
 
@@ -754,19 +754,6 @@ span {
   color: var(--main-color);
 }
 
-/* SCROLL REVEAL */
-.reveal {
-  position: relative;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
 /* MEDIAQUERY */
 @media (max-width: 1200px) {
   html {
@@ -855,6 +842,10 @@ span {
     background: var(--bg-color);
     opacity: 0.6;
   }
+
+  .projects .prj-details {
+    font-size: 50%;
+  }
 }
 
 @media (max-width: 765px) {
@@ -879,6 +870,15 @@ span {
   .slider p {
     padding: 0 20px;
   }
+
+  .projects .prj-imagesecond .prj-imagefirst {
+    width: 70px;
+    height: 20px;
+  }
+
+  .projects .prj-details {
+    font-size: 45%;
+  }
 }
 
 @media (max-width: 590px) {
@@ -901,6 +901,11 @@ span {
   .footer p {
     margin-top: 2rem;
     text-align: center;
+  }
+
+  .skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -958,6 +963,19 @@ span {
 .education.show-animate .animate.scroll {
   transition-delay: calc(0.1s * var(--i));
   width: 0;
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /* KEYFRAMES ANIMATION */

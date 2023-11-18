@@ -910,6 +910,21 @@ span {
     font-size: 5.2rem;
   }
 
+  .home {
+    justify-content: center;
+  }
+
+  .home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
   .education {
     padding: 10rem 4% 5rem 5%;
   }
@@ -930,23 +945,6 @@ span {
   .skills {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .home {
-    justify-content: center;
-  }
-
-  .home-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
   }
 }
 

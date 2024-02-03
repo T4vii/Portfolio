@@ -448,33 +448,35 @@
     <section class="contact reveal" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form id="contactForm" action="#"  >
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Full Name" required class="item" id="name" autocomplete="off">
+            
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Email Address" required class="item" id="email" autocomplete="off">
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required>
+            <input type="number" placeholder="Mobile Number" required id="phone" class="item" autocomplete="off">
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Subject" required>
+            <input type="text" placeholder="Email Subject" required id="subject" class="item" autocomplete="off">
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="textarea-field">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-          <span class="focus"></span>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required class="item" autocomplete="off"></textarea>
+          
         </div>
+        
 
         <div class="btn-box btns">
           <button type="submit" class="btn">Submit</button>
@@ -495,6 +497,9 @@
 
     <!--Swiper JavaScript-->
     <script src="/JS/swiper-bundle.min.js"></script>
+
+    <!--Form Script-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--JavaScript-->
     <script src="/JS/script.js"></script>

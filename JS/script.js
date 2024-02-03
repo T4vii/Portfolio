@@ -90,7 +90,7 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
 function sendEmail() {
-  const bodyMessage = `Full Name: ${fullName.value} </br> Email: ${email.value} </br> Phone Number: ${phone.value} </br> Message: ${message.value}`;
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
 
   Email.send({
     Host: 'smtp.elasticemail.com',
